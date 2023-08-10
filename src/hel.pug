@@ -1,0 +1,227 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title IO LITS
+        block links
+            link(rel="stylesheet", href="https://fonts.googleapis.com")
+            link(rel="stylesheet", href="https://fonts.gstatic.com")
+            link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Prata&display=swap")
+            link(rel="stylesheet", href="css/all.min.css")
+            //- link(rel="stylesheet", href="css/swiper.css")
+            link(rel="stylesheet", href="css/bootstrap.min.css")
+            link(rel="stylesheet", href="css/normalize.css")
+            link(rel="stylesheet", href="css/main.css")
+
+    body 
+        block main-header 
+            header 
+                nav.navbar.navbar-expand-lg
+                    .container 
+                        ul.left.d-lg-flex.m-auto.d-none
+                            li
+                                a(href=""): i.fa-regular.fa-user
+                            li
+                                a(href=""): i.fa-regular.fa-star
+                        .nav-mobile.d-lg-none
+                            ul.mobile-links
+                                i.fa-solid.fa-xmark.d-flex.fs-4.ps-3.d-lg-none 
+                                li
+                                    a(href="") Home
+                                li
+                                    a(href="")
+                                        span Products
+                                        i.fa-solid.fa-sort-down
+                                li
+                                    a(href="") Discount
+                                li
+                                    a(href="") 
+                                        span Specials
+                                        i.fa-solid.fa-sort-down 
+                                li
+                                    a(href="") sale
+                            .dowen
+                                button.button.log  Login
+                                button.button.rig rigister
+                        .collapse.navbar-collapse#navbarSupportedContent
+                            ul.navbar-nav.m-auto.mb-2.mb-lg-0
+                                li.nav-item
+                                    a.nav-link(href="") Home
+                                li.nav-item
+                                    a.nav-link(href="")    
+                                        span Products
+                                        i.fa-solid.fa-sort-down
+                                    .product-box
+                                        .container
+                                            .row.gap-4
+                                                .col.text-center 
+                                                    .dot-box
+                                                        .dot-img
+                                                            a.product-link(href="") 
+                                                            .image 
+                                                                img(src="./img/prod/product_01.jpg", alt="")
+                                                            .image.hover 
+                                                                img(src="./img/prod/product_01b.jpg", alt="")
+                                                            ul.actions
+                                                                li
+                                                                    a(href="")
+                                                                        i.fa-regular.fa-star 
+                                                                li
+                                                                    a(href="")
+                                                                        i.fa-solid.fa-right-left 
+                                                                li
+                                                                    a(href="")
+                                                                        i.fa-regular.fa-eye
+                                                            .label
+                                                                span -25%
+                                                        h6 The Sweater in tosca
+                                                        span.old-price.text-decoration-line-through $62.00
+                                                        span.new-price $49
+                                                .col.text-center 
+                                                    .dot-box
+                                                        .dot-img
+                                                            a.product-link(href="") 
+                                                            .image 
+                                                                img(src="./img/prod/product_02.jpg", alt="")
+                                                            .image.hover 
+                                                                img(src="./img/prod/product_02b.jpg", alt="")
+                                                            ul.actions
+                                                                li
+                                                                    a(href="")
+                                                                        i.fa-regular.fa-star 
+                                                                li
+                                                                    a(href="")
+                                                                        i.fa-solid.fa-right-left 
+                                                                li
+                                                                    a(href="")
+                                                                        i.fa-regular.fa-eye 
+                                                            .label
+                                                                span -25%
+                                                        h6 Ocean blue llc2
+                                                        //- span.old-price.text-decoration-line-through 
+                                                        span.new-price $59.00
+                                                .col.text-center 
+                                                    .dot-box
+                                                        .dot-img
+                                                            a.product-link(href="") 
+                                                            .image 
+                                                                img(src="./img/prod/product_03.jpg", alt="")
+                                                            .image.hover 
+                                                                img(src="./img/prod/product_03b.jpg", alt="")
+                                                            ul.actions
+                                                                li
+                                                                    a(href="")
+                                                                        i.fa-regular.fa-star 
+                                                                li
+                                                                    a(href="")
+                                                                        i.fa-solid.fa-right-left 
+                                                                li
+                                                                    a(href="")
+                                                                        i.fa-regular.fa-eye 
+                                                            .label
+                                                                span -25%
+                                                        h6 inner sweater at office
+                                                        //- span.old-price.text-decoration-line-through 
+                                                        span.new-price $$39.00
+                                                .col 
+                                                    h6 Apparel
+                                                    ul.pru-links
+                                                        li
+                                                            a(href="") Prada
+                                                        li
+                                                            a(href="") Gucci
+                                                        li
+                                                            a(href="") Chanel
+                                                        li
+                                                            a(href="") Gucci
+                                                        li
+                                                            a(href="") Zara
+                                                .col 
+                                                    h6 Shoes
+                                                    ul.pru-links
+                                                        li
+                                                            a(href="") Adidas
+                                                        li
+                                                            a(href="") Nike
+                                                        li
+                                                            a(href="") Puma
+                                                        li
+                                                            a(href="") gucci
+                                                        li
+                                                            a(href="") Doice & gabbana
+                                                        li 
+                                                            a(href="")  Louis & Vuitton
+                                                .col 
+                                                    h6 Perfume
+                                                    ul.pru-links
+                                                        li
+                                                            a(href="") Armani
+                                                        li
+                                                            a(href="") Dior
+                                                        li
+                                                            a(href="") Boss
+                                                        li
+                                                            a(href="") Tom Ford
+                                                        li
+                                                            a(href="") Gucci
+                                a.navbar-brand.m-0.d-lg-none(href="")  TheShop
+                                li.nav-item.drop-2
+                                    a.nav-link(href="") 
+                                        span Specials
+                                        i.fa-solid.fa-sort-down
+                                    ul.specials-box
+                                        li
+                                            a(href="") Dolce & Gabbana
+                                        li
+                                            a(href="") Louis Vutton
+                                        li
+                                            a(href="") Tom Ford
+                                        li
+                                            a(href="") Dior
+                                li.nav-item
+                                    a.nav-link(href="") sale
+                        i.fa-solid.fa-bars.p-3.d-lg-none.d-block
+                        a.navbar-brand.m-0.d-lg-none(href="") TheShop
+                        ul.right.d-flex.align-items-center
+                            li
+                                i.fa-solid.fa-magnifying-glass.d-none.d-lg-flex 
+                            li
+                                i.fa-solid.fa-bag-shopping
+                                .cart.box.fw-bold.fs-6
+                                    ul.cart
+                                        li 
+                                            i.fa-solid.fa-xmark
+                                        li 
+                                            h2.ff-f.text-black  shopping cart 
+                                    .cart-coup
+                                        .input-container
+                                            input(type="text", required="", placeholder="Coupon" )
+                                            button.invite-btn  Apply
+                                    ul.d-flex.flex-column.gap-3
+                                        li subtotal
+                                        li shipping
+                                        li.d-flex.align-items-center.gap-2.justify-content-between
+                                            .right.d-flex.align-items-center.justify-content-center
+                                                input.ui-checkbox(type="checkbox")
+                                                span Free 
+                                            span $0.00
+                                        li.d-flex.align-items-center.gap-2.justify-content-between
+                                            .right.d-flex.align-items-center.justify-content-center
+                                                input.ui-checkbox(type="checkbox")
+                                                span Flat 
+                                            span $10.00
+                                        li.d-flex.align-items-center.gap-2.justify-content-between
+                                            span promo discount
+                                            span -$0.00
+                                    .total
+                                        span Total
+                                        span#Total-price
+                                    .cart-btn.d-flex.flex-column
+                                        button.button checkout
+                                        button.button view cart
+                .container-input.text-center
+                    input.input(type="text" placeholder="Search" name="text")
+                    i.fa-solid.fa-magnifying-glass 
+                    i.fa-solid.fa-xmark
+        script(src="js/shop.js") 

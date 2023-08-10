@@ -1,0 +1,30 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+//font-family: 'Prata', serif; 
+html {
+  scroll-behavior: smooth;
+}
+.ff-f {
+  font-family: 'Prata', serif; 
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+}
+h1 {
+  margin-top: 0 !important;
+}
+

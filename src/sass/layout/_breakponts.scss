@@ -1,0 +1,99 @@
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+@mixin xsTosm {
+  @media (min-width: map-get($breakpoints, "xs")) and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin xsTomd {
+  @media (min-width: map-get($breakpoints, "xs")) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) and (max-width: 1399px) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media (min-width: map-get($breakpoints, "xxl")) {
+    @content;
+  }
+}
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin dow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 42px;
+  height: 42px;
+  background-color: $color-white;
+  color: $color-black;
+  border-radius: 50%;
+  transition: $main-transition;
+  &:hover {
+    background-color: gray;
+    color: $color-white;
+  }
+  i {
+    margin: auto;
+  }
+}
+
+// @mixin sc-size($si) {
+//   @if $si == mobile {
+//     @media (max-width: 767px) {
+//       @content;
+//     }
+//   } @else if $si == small {
+//     @media (min-width: 767px) and (max-width: 991px) {
+//       @content;
+//     }
+//   } @else if $si == medium {
+//     @media (min-width: 992px) and (max-width: 1199px) {
+//       @content;
+//     }
+//   } @else if $si == large {
+//     @media (min-width: 1200px) and (max-width: 1399px) {
+//       @content;
+//     }
+//   } @else if $si == x-large {
+//     @media (min-width: 1400px) {
+//       @content;
+//     }
+//   }
+// }

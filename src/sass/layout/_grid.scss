@@ -1,0 +1,106 @@
+// Grid system
+//
+
+@use "./breakponts" as *;
+
+// @use "../utilites/display" as *;
+
+$grid-columns: 12;
+$p-x: 1.5rem;
+$p-y: 0;
+$m-x: 1.5rem;
+$m-y: 0;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1 * $m-y;
+  margin-right: -0.5 * $m-x;
+  margin-left: -0.5 * $m-x;
+}
+
+.row > * {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: $p-x * 0.5;
+  padding-left: $p-x * 0.5;
+  margin-top: $m-y;
+}
+.col {
+  flex: 1 0 0%;
+}
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    width: percentage($i / $grid-columns);
+  }
+}
+
+@include sm {
+  .col-sm-auto {
+    flex: 1 0 auto;
+    width: auto;
+  }
+  @for $i from 1 through $grid-columns {
+    .col-xs-#{$i} {
+      width: percentage($i / $grid-columns);
+    }
+  }
+}
+
+@include md {
+  .col-md-auto {
+    flex: 1 0 auto;
+    width: auto;
+  }
+  @for $i from 1 through $grid-columns {
+    .col-md-#{$i} {
+      width: percentage($i / $grid-columns);
+    }
+  }
+}
+
+@include lg {
+  .col-lg-auto {
+    flex: 1 0 auto;
+    width: auto;
+  }
+  @for $i from 1 through $grid-columns {
+    .col-lg-#{$i} {
+      width: percentage($i / $grid-columns);
+    }
+  }
+}
+
+@include xl {
+  .col-xl-auto {
+    flex: 1 0 auto;
+    width: auto;
+  }
+  @for $i from 1 through $grid-columns {
+    .col-xl-#{$i} {
+      width: percentage($i / $grid-columns);
+    }
+  }
+}
+
+@include xxl {
+  .col-xxl-auto {
+    flex: 1 0 auto;
+    width: auto;
+  }
+  @for $i from 1 through $grid-columns {
+    .col-xxl-#{$i} {
+      width: percentage($i / $grid-columns);
+    }
+  }
+}
